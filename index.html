@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">RicardoLopez-IGFO</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">HOME</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">ABOUT ME</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CV</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/hero1.jpg" alt="">
+            </div>
+            <h1>ARISAI</h1>
+            <h2>PHOTONIC ENGINEER On OPTO-ELECTRONICS</h2>
+            <div class="redes">
+                <a href="https://github.com/RicardoLopez-IGFO"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/arisai-ricardo-meneses-lopez-pi31415629/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <!-- <a href="#"><i class="fa-solid fa-rss"></i></a> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>About Me</h2>
+            <p><span>Hello!, I´m Ricardo Lopez.</span> I'm Photonic Engineer (IGFO) & I work with Opto-Electronic systems like Interferometers, Lasers, Spectrometers, Optical Fibers & more.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Personal Data</h3>
+                    <ul>
+                        <li>
+                            <strong>Birthday</strong>
+                            11-07-1997
+                        </li>
+                        <li>
+                            <strong>Phone</strong>
+                            33 24071297
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            ari66ml@gmail.com
+                        </li>
+                        <li>
+                            <strong>Location</strong>
+                            Guadalajara, Jalisco, México.
+                        </li>
+                        <li>
+                            <strong>Work</strong>
+                            <span>Open To Work</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Interests</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-dumbbell"></i>
+                            <span>GYM</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSIC</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>TRAVELS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-circle-user"></i>
+                            <span>Social Media</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>SPORTS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>BOOKS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>AUTOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>PHOTOS</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <button>
+                <a href="CV.pdf" download>
+                Download CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+                </a>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    
+                    <div class="skill">
+                        <span>C & C++</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>Matlab</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>88%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>SolidWorks</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>LabView</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>DiaLux</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>57%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>WinLens 3D</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>64%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Proteus</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>93%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>OceanView</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>68%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>MicroC</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Comunication</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>86%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Team Worker</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Organized</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedication</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>96%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Punctuality</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>99%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Education</h3>
+                    <div class="item izq">
+                        <h4>Photonic Engineer</h4>
+                        <span class="casa">Universidad de Guadalajara</span>
+                        <span class="fecha">2017 - 2024</span>
+                        <p> Photonics is the science of the study, generation, manipulation and detection
+                            of photons integrating the optics, electronics, computation and physics areas
+                            to make applications in communications, lightning, medical, astronomy, technology
+                            & more. </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>       
+                </div>
+
+                <div class="col derecha">
+                    <h3>Work Experience</h3>
+                    <div class="item der">
+                        <h4>QA Technician</h4>
+                        <span class="casa">MOLEX</span>
+                        <span class="fecha">August 2021 - June 2023</span>
+                        <p> I was in charged of PCBs area at SMT and Back-End Proccess, working in mass
+                             production automotive & medical projects. I Worked on Fiber Optics area in 400 GB Transceivers project.
+                             <!--
+                            <br>
+                            - Signal receivers (Antennas) for General Motors (GM), Audi, FCA & Volvo. <br>
+                            - Dual USB charging Hubs for Toyota & Ford.<br>
+                            - LED Headlights for Hella, Yangfeng, Sienna, Ventra, Varroc & others.<br>
+                            - Handbook Nebulizers & Non-Invasive Dactilar Glucometer for Physio & Philips.<br>
+                            <br>
+                            Making Cross Sections, CPK analyst, Gage R&R, Failure Mode and Effects Analysis (FMEA) all for PPAPs. Inspectors Training based on IPC 610, Statistical Process Control (SPC) & Quality requirements. I worked on FR/DR 400/100 GB
+                            Transceivers in Opto-Electronics within Fiber Optics area on a Clean Room, taking part in activities as Inter/External re-certification hearings, Visual Aids & Control Plans Updates, make Quality Requirements (Workmanship), QRAPs, Inspectors Training based on IPC 640, Manage & Make QA testings reports like
+                            Particles Measurements, ESD, Push, Shear (On Fiber Arrays) & Pull Test (On Wire Bonds) based on MIL-STD-883 Method 2011.7 -->
+                        </p> 
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Software Developer</h4>
+                        <span class="casa">HELLA </span>
+                        <span class="fecha">January 2024 - May 2024</span>
+                        <p>I worked on front seat control software of the 2025 Chevrolet F-150 (DSM6)
+                            at the input/output (IO stack) using RH850G3KH MCU for vertical, horizontal
+                            & tilt movement. Based on AUTOSAR architecture & using Davinci Configurator/
+                            Developer, ACPro, Simulink, DSPace, Vector, Matlab tools, Beyond Compare.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+
+                <div class="proyecto">
+                    <a href="https://github.com/RicardoLopez-IGFO/Electronics.git">
+                    <img src="img/Electronics2.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Electronics</h3>
+                        <p>Embedded & Reconfigurable </p>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="proyecto">
+                    <a href="https://github.com/RicardoLopez-IGFO/Optics.git">
+                    <img src="img/Optics.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Optics</h3>
+                        <p>Real & Ideal Lens</p>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="proyecto">
+                    <a href="https://github.com/RicardoLopez-IGFO/Opto-Electronics.git">
+                    <img src="img/Optoelectronics1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>OptoElectronics</h3>
+                        <p>Labview, IR Sensors</p>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="proyecto">
+                    <a href="https://github.com/RicardoLopez-IGFO/Software.git">
+                    <img src="img/Software.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Software</h3>
+                        <p>C, C++, Matlab, QT </p>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="proyecto">
+                    <a href="https://github.com/RicardoLopez-IGFO/3D-Design.git">
+                    <img src="img/3D1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>3D Design</h3>
+                        <p>SolidWorks, Autocad, DiaLux</p>
+                    </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACT</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Enter Name">
+                    <input type="text" placeholder="Enter Phone Number">
+                    <input type="text" placeholder="Enter Adress">
+                    <input type="text" placeholder="Enter Subject">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Enter Message"></textarea>
+                    <button>
+                        Send Message <i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/Location.jpeg" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                México, Guadalajara, Jal.
+                            </li>
+                            <!-- <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Call: 33 - 24071297 
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: ari66ml@gmail.com
+                            </li> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://github.com/RicardoLopez-IGFO"><i class="fa-brands fa-github"></i></a>
+            <!-- <a href="#"><i class="fa-brands fa-twitter"></i></a> -->
+            <!-- <a href="#"><i class="fa-brands fa-skype"></i></a> -->
+            <a href="https://www.linkedin.com/in/arisai-ricardo-meneses-lopez-pi31415629/"><i class="fa-brands fa-linkedin-in"></i></a>
+            <!-- <a href="#"><i class="fa-solid fa-rss"></i></a> -->
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
